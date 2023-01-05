@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head lang="pt-br">
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Cronometro</title>
+
+		<link rel="stylesheet" href="style.css">
+		
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Rowdies:wght@300&display=swap" rel="stylesheet">
+		
+
+		<script src="cronometro.js"></script>
+
+    	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	    <!--[if lt IE 9]>
+      	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    	<![endif]-->
+	</head>
+	<body>
+		<div id="app">
+
+			<main class="content">
+				<div class="div_cronometro">
+					<h1 id="text_cronometro">00:00:00</h1>
+				</div>
+
+				<div class="div_buttons">
+					<div class="button button_start" onclick="start()">
+						<p>INICIAR</p>
+					</div>
+
+					<div class="button button_pause" onclick="pause()">
+						<p>PAUSAR</p>
+					</div>
+
+					<div class="button button_restart" onclick="restart()">
+						<p>REINICIAR</p>
+					</div>
+				</div>
+			</main>
+		</div>
+	</body>
+</html>
